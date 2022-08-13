@@ -1,0 +1,71 @@
+body {
+    min-width: 1440px;
+    background: $white;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: $black;    
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    @include centerBlock (1378px, 20px);
+    overflow: hidden;    
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+h2,
+h3 {
+    font-size: 50px;
+    line-height: 60px;    
+}
+h5 {
+    font-size: 65px;
+    line-height: 75px;    
+}
+h6 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.logo {
+    transition: transform $speed ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.posters {
+    transition: transform $speed ease-in-out;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+.shadow {
+    transition: box-shadow $speed ease-in-out;
+    &:hover {
+        box-shadow: 2px 2px 12px #868484;
+    }
+}

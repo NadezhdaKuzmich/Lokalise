@@ -1,0 +1,39 @@
+#header {
+    display: flex;
+    border-bottom: 2px solid $light-grey;
+    font-size: 15px;
+}
+.header-panel {
+    display: flex;
+    align-items: center;
+    padding: 26px 0 24px;
+    gap: 51px;
+    a.white {
+        margin: 0 10px 0 0;
+    }
+}
+.header-bar {
+    display: flex;
+    flex-grow: 1;
+    a {
+        color: $black;    
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+.menu {
+    display: flex;
+    li {
+        padding: 0 58px 0 0;
+        &:nth-child(3) {
+            padding: 0 42px 0 0;
+        }
+        &:nth-child(4) {
+            padding: 0 57px 0 0;
+        }        
+    }
+}
+.btn-box {
+    display: flex;
+}

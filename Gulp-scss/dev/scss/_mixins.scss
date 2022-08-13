@@ -1,0 +1,6 @@
+@mixin centerBlock($w, $g) {
+    max-width: $w;
+    width: 100%;
+    padding: 0 $g;
+    margin: 0 auto;
+}
