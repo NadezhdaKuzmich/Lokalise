@@ -36,6 +36,9 @@
 }
 .main-line {
     background: $light-orange;
+    a:hover {
+        color: $light-yellow;
+    }
     .brand-line {
         display: flex;
         flex-direction: column;
@@ -73,6 +76,9 @@
     } 
     .description {
         max-width: 500px;
+        h3>a {
+            text-decoration: none;
+        }
         a {
             text-decoration: underline;
         } 
@@ -130,6 +136,9 @@
                 font-size: 25px;
                 line-height: 35px;        
                 padding: 26px 0 20px;
+                &>a {
+                    text-decoration: none;
+                }
             }
         }
     }
