@@ -1,36 +1,59 @@
 body {
-    min-width: 1440px;
+    width: 100%;
     background: $white;
-    font-family: 'Graphik LCG';
+    font-family: Graphik LCG, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    color: $black;    
+    font-size: 3.5vw;
+    color: $black;
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 25px;
+    }    
 }
+
 #wrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
+
 .container {
     @include centerBlock (1378px, 20px);
 }
+
 img {
     max-width: 100%;
-    vertical-align: top;
+    vertical-align: middle;
     height: auto;
 }
+
 a {
     text-decoration: none;
     width: fit-content;    
     color: $black;
+
     &:hover {
         color: $orange;
     }
-}    
+} 
+
 ul {
     list-style: none;
 }
+
+span {
+    display: block;
+}
+
 ul,
 p,
 h1,
@@ -42,33 +65,78 @@ h6 {
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    font-size: 6vw;
+    line-height: calc(70/65); 
+
+    @media (min-width: 768px) {
+        font-size: 4vw;
+    }  
+}
+
+h2,
+h3,
+h5,
+h6 {
+    font-size: 5.5vw;
+
+    @media (min-width: 768px) {
+        font-size: 4vw;
+    }
+}
+
 h2,
 h3 {
-    font-size: 50px;
-    line-height: 60px;    
+    line-height: calc(60/50);
+
+    @media (min-width: 1400px) {
+        font-size: 50px;
+    }     
 }
+
 h5 {
-    font-size: 65px;
-    line-height: 75px;    
+    line-height: calc(75/65);
 }
+
+h1,
+h5 {
+    @media (min-width: 1400px) {
+        font-size: 65px;
+    }
+}
+
 h6 {
-    font-size: 40px;
-    line-height: 50px;
+    line-height: calc(50/40);
+
+    @media (min-width: 992px) {
+        font-size: 3vw;
+    } 
+
+    @media (min-width: 1400px) {
+        font-size: 40px;
+    } 
 }
+
 .logo {
     transition: transform $speed ease-in-out;
+
     &:hover {
         transform: scale(1.1);
     }
 }
+
 .posters {
     transition: transform $speed ease-in-out;
+
     &:hover {
         transform: scale(1.02);
     }
 }
+
 .shadow {
     transition: box-shadow $speed ease-in-out;
+    
     &:hover {
         box-shadow: 2px 2px 12px #868484;
     }

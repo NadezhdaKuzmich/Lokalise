@@ -1,39 +1,94 @@
-.btn {
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;    
+.btn-box {
+    display: flex;
+
+    @media (max-width: 991px) {
+        padding: 0;
+    }
+
+    >li {
+        padding: 0 5px;
+
+        @media (max-width: 991px) {
+            width: 50%;
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
-.white{
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 3vw;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+    } 
+
+    @media (min-width: 992px) {
+        font-size: 16px;
+    }  
+}
+
+.white {
     color: $black;
+    background-color: $white;
     border: 1px solid $black;
     padding: 13px 35px 11px 35px;
+
     &:hover {
         color: $white;
         background: $black;
     }
 }
+
 .orange {
     color: $white;
     background: $orange;
     padding: 13px 22px;
+
     &:hover {
         color: $white;
         background: $black;
     }
 }
+
 .two {
-    padding: 13px 42px;
+    padding: 14px 25px;
+
+    @media (min-width: 992px) {
+        padding: 20px 42px;
+    }  
 }
+
 .book {
-    padding: 12px 28px;
+    padding: 13px 10px;
+
+    @media (min-width: 992px) {
+        padding: 19px 28px;
+    }  
 }
+
 .three {
-    padding: 20px; 
+    padding: 12px; 
+
+    @media (min-width: 992px) {
+        padding: 20px;
+    }  
 }
+
 .black {
     color: $white;
     background: $black;
-    padding: 21px 41px;
+    padding: 10px 12px;
+
+    @media (min-width: 992px) {
+        padding: 21px 41px;
+    }  
+
     &:hover {
         color: $black;
         background: $white;

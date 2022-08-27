@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,16 +8,23 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<title>Lokalise</title>
 </head>
+
 <body>
 	<div id="wrapper">
 		<header id="header">
 			<div class="container">
 				<div class="header-panel">
-					<a href="#">
-						<img class="loco logo" src="./images/logo.svg" alt="localise">
-					</a>
+					<div class="logotip">
+						<a href="#">
+							<img class="loco logo" src="./images/logo.svg" alt="localise">
+						</a>
+					</div>
+					<input id="opener" type="checkbox">
+					<label for="opener" class="opener">
+						<span>menu</span>
+					</label>
 					<div class="header-bar">
-						<nav>
+						<nav class="menu-bar">
 							<ul class="menu">
 								<li><a href="#">Product</a></li>
 								<li><a href="#">Features</a></li>
@@ -25,40 +33,40 @@
 								<li><a href="#">Resources</a></li>
 							</ul>
 						</nav>
-					</div>
-					<div class="btn-box">
-						<a href="#" class="btn white">Log in</a>
-						<a href="#" class="btn orange">Try it free</a>
+						<ul class="btn-box">
+							<li><a href="#" class="btn white">Log in</a></li>
+							<li><a href="#" class="btn orange">Try it free</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main>
-			<div class="container main-poster">
-				<div class="text-poster">
-					<h1>Accelerate localization from code to delivery</h1>
-					<div class="text-box">
-						<p>A localization and translation management platform for agile teams. Embrace automation, workflow transparency, and fast project delivery.</p>
+			<div class="main-poster container">
+				<div class="poster-box">
+					<div class="poster">
+						<a href="#">
+							<img class="posters" src="./images/poster.svg" alt="poster">
+						</a>
 					</div>
-					<div class="btn-box">
-						<a href="#" class="btn orange two">Try it free</a>
-						<a href="#" class="btn white book">Book a demo</a>
+					<div class="text-poster">
+						<h1>Accelerate localization from code to delivery</h1>
+						<div class="text-box">
+							<p>A localization and translation management platform for agile teams. Embrace automation, workflow transparency, and fast project delivery.</p>
+						</div>
+						<ul class="btn-box">
+							<li><a href="#" class="btn orange two">Try it free</a></li>
+							<li><a href="#" class="btn white book">Book a demo</a></li>
+						</ul>
+						<a href="#"><span>Try all features for 14 days · No credit card required</span></a>
 					</div>
-					<a href="#"><span>Try all features for 14 days · No credit card required</span></a>
-				</div>
-				<div class="poster">
-					<a href="#">
-						<img class="posters" src="./images/poster.svg" alt="poster">
-					</a>
 				</div>
 			</div>
 			<div class="main-line">
 				<div class="container">
 					<div class="brand-line">
 						<div class="text-box">
-							<a href="#">
-								<h2>The preferred localization tool of 1500+ companies</h2>
-							</a>
+							<h2><a href="#">The preferred localization tool of 1500+ companies</a></h2>
 						</div>
 						<div class="brand-box">
 							<ul class="brands">
@@ -277,6 +285,7 @@
 			<div class="main-quote">
 				<div class="container">
 					<div class="box-quote">
+						<img class="shadow" src="./images/Edward_Cooper.jpg" alt="Edward_Cooper">
 						<div class="quote">
 							<blockquote>
 								“Lokalise has turned a task we were dreading into an absolute pleasure. Great platform, intuitive UX, powerful API. The automatic text recognition for screenshots has been a lifesaver, and over-the-air updates are the icing on the cake.”
@@ -288,7 +297,6 @@
 								</a>
 							</address>
 						</div>
-						<img class="shadow" src="./images/Edward_Cooper.jpg" alt="Edward_Cooper">
 					</div>
 				</div>
 			</div>
@@ -351,73 +359,77 @@
 			</div>
 		</main>
 		<footer>
-			<div class="container footer-box">
-				<div class="case-studios">
-					<h6>Case Studies</h6>
-					<a href="#">
-						<img class="posters" src="./images/cycling.jpg" alt="cycling">
-					</a>
-					<a href="#">
-						<img class="specialized logo" src="./images/specialized.svg" alt="specialized">
-					</a>
-					<p>Riding towards global success with a 100% teammate enthusiasm</p>
-					<a href="#">Read more</a>
-				</div>
-				<div class="footer-menu">
-					<nav>
-						<p>Product</p>
-						<ul class="menu">
-							<li><a href="#">For developers</a></li>
-							<li><a href="#">For managers</a></li>
-							<li><a href="#">For translators</a></li>
-							<li><a href="#">For designers</a></li>
-							<li><a href="#">Integrations</a></li>
-							<li><a href="#">Security</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Automations</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer-menu">
-					<nav>
-						<p>Support</p>
-						<ul class="menu">
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Documentation</a></li>
-							<li><a href="#">Status</a></li>
-							<li><a href="#">Product Updates</a></li>
-							<li><a href="#">CLI Tool</a></li>
-							<li><a href="#">API Reference</a></li>
-							<li><a href="#">iOS and Android SDK</a></li>
-							<li><a href="#">Supported File Formats</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer-menu">
-					<nav>
-						<p>Company</p>
-						<ul class="menu">
-							<li><a href="#">About</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Careers | We`re Hiring</a></li>
-							<li><a href="#">Case Studies</a></li>
-							<li><a href="#">Media Kit</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer-menu">
-					<nav>
-						<p>Legal</p>
-						<ul class="menu">
-							<li><a href="#">Terms of Service</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Cookie Policy</a></li>
-							<li><a href="#">Privacy Shield</a></li>
-							<li><a href="#">DPA</a></li>
-							<li><a href="#">List of Sub-processors</a></li>
-							<li><a href="#">Candidates Privacy Notice</a></li>
-						</ul>
-					</nav>
+			<div class="footer-panel container">
+				<div class="footer-box">
+					<div class="case-studios">
+						<h6>Case Studies</h6>
+						<a href="#">
+							<img class="posters" src="./images/cycling.jpg" alt="cycling">
+						</a>
+						<a href="#">
+							<img class="specialized logo" src="./images/specialized.svg" alt="specialized">
+						</a>
+						<p>Riding towards global success with a 100% teammate enthusiasm</p>
+						<a href="#">Read more</a>
+					</div>
+					<div class="box-menu">
+						<div class="footer-menu">
+							<nav>
+								<p>Product</p>
+								<ul class="menu">
+									<li><a href="#">For developers</a></li>
+									<li><a href="#">For managers</a></li>
+									<li><a href="#">For translators</a></li>
+									<li><a href="#">For designers</a></li>
+									<li><a href="#">Integrations</a></li>
+									<li><a href="#">Security</a></li>
+									<li><a href="#">Pricing</a></li>
+									<li><a href="#">Automations</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer-menu">
+							<nav>
+								<p>Support</p>
+								<ul class="menu">
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Documentation</a></li>
+									<li><a href="#">Status</a></li>
+									<li><a href="#">Product Updates</a></li>
+									<li><a href="#">CLI Tool</a></li>
+									<li><a href="#">API Reference</a></li>
+									<li><a href="#">iOS and Android SDK</a></li>
+									<li><a href="#">Supported File Formats</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer-menu">
+							<nav>
+								<p>Company</p>
+								<ul class="menu">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Careers | We`re Hiring</a></li>
+									<li><a href="#">Case Studies</a></li>
+									<li><a href="#">Media Kit</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer-menu">
+							<nav>
+								<p>Legal</p>
+								<ul class="menu">
+									<li><a href="#">Terms of Service</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Cookie Policy</a></li>
+									<li><a href="#">Privacy Shield</a></li>
+									<li><a href="#">DPA</a></li>
+									<li><a href="#">List of Sub-processors</a></li>
+									<li><a href="#">Candidates Privacy Notice</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="footer-info">
@@ -443,4 +455,5 @@
 		</footer>
 	</div>
 </body>
+
 </html>

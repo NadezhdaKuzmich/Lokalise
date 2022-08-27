@@ -1,0 +1,101 @@
+.main-capabilities {
+    background: $light-yellow;
+    padding: 70px 0 50px;
+    text-align: center;
+    line-height: calc(25/18);
+
+    @media (min-width: 768px) {
+        padding: 90px 0 60px;
+    }
+
+    @media (min-width: 992px) {
+        padding: 100px 0 60px;
+        font-size: 16px;
+    }
+
+    @media (min-width: 1400px) {
+        padding: 110px 0 72px;
+        font-size: 18px;
+    }  
+
+    h3 {
+        padding: 0 0 10px;
+
+        @media (min-width: 992px) {
+            padding: 0 0 50px;
+        }
+
+        @media (min-width: 1400px) {
+            padding: 0 0 79px;
+        }
+    }
+}
+
+.box-capabilities {
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    .card_visual {
+        img {
+            width: 30%;
+
+            @media (min-width: 992px) {
+                width: 50%;
+            }
+        }
+    }
+
+    >li {
+        width: 85%;
+        padding: 20px 0;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            width: calc(100%/2);
+            padding: 30px 55px;
+        }
+
+        @media (min-width: 992px) {
+            width: calc(100%/3);
+            padding: 40px 20px;
+        }
+
+        @media (min-width: 1400px) {
+            width: calc(100%/3);
+            padding: 0 60px 75px;
+        }
+
+        .card_content {
+            h4 {
+                padding: 20px 0;
+                font-weight: 600;
+                font-size: 4vw;
+                line-height: calc(35/25);
+
+                @media (min-width: 768px) {
+                    font-size: 3vw;
+                }
+
+                @media (min-width: 992px) {
+                    font-size: 2.5vw;
+                }
+
+                @media (min-width: 1400px) {
+                    padding: 25px 0 20px;
+                    font-size: 25px;
+                }
+                
+                &>a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

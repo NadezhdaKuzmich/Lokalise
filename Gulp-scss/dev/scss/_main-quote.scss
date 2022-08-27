@@ -1,0 +1,114 @@
+.main-quote {
+    background: $light-blue;
+    line-height: calc(40/30);
+    padding: 40px 20px;
+
+    @media (min-width: 1200px) {
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    @media (min-width: 1400px) {
+        font-size: 30px;
+    }
+}
+
+.box-quote {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    @media (min-width: 1200px) {
+        justify-content: space-around;
+        padding: 50px 20px;
+    }
+
+    @media (min-width: 1400px) {
+        padding: 55px 0 105px;
+    }
+
+    .shadow {
+        @media (min-width: 768px) {
+            width: 35%;
+        }
+
+        @media (min-width: 992px) {
+            width: 25%;
+        }
+
+        @media (min-width: 1200px) {
+            width: 310px;
+        }
+    }
+
+    .quote {
+        padding: 40px 0;
+        text-align: justify;
+
+        @media (min-width: 768px) {
+            text-align: left;
+            padding: 10px 23px 0 0;
+        }
+
+        @media (min-width: 1400px) {
+            max-width: 930px;
+        }
+    }
+
+    blockquote {
+        margin: 0;
+        padding: 0 0 15px;
+
+        @media (min-width: 1400px) {
+            padding: 0 0 23px;       
+        }
+    }
+
+    address {
+        font-family: 'Roboto';
+        font-size: 3vw;
+        line-height: calc(25/15);
+        font-style: normal;
+
+        @media (min-width: 768px) {
+            font-size: 12px;
+        }
+
+        @media (min-width: 1400px) {
+            font-size: 15px;       
+        }
+
+        p {
+            padding: 0 0 2px;
+
+            @media (min-width: 1400px) {
+                padding: 0 0 7px;       
+            }
+        }
+
+        img {
+            width: 25%;
+
+            @media (min-width: 768px) {
+                width: 15%;
+            }
+
+            @media (min-width: 992px) {
+                width: 10%;
+            }
+            
+            @media (min-width: 1400px) {
+                width: auto;      
+            }
+        }
+    }
+}
